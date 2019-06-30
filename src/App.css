@@ -1,0 +1,146 @@
+*{
+  color: #748085;
+}
+select,option{
+  border: none;
+  outline: none;
+}
+.container{
+  background-color: #F5F5F5;
+  padding: 20px;
+  height: calc(100vh);
+}
+.container .title select{
+  font-size: 18px;
+  background-color: #F5F5F5;
+}
+option{
+  -webkit-appearance: none;
+  background-color: #fff;
+}
+.container .teams{
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 20px;
+}
+.teams .teamCard{
+  width: 23%;
+  background-color: #fff;
+  padding-bottom: 10px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #F1F1F1;
+  box-shadow: 3px 3px 1px #F1F1F1;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: row;
+}
+.teams .teamLock{
+  border: 2px solid #CACED1;
+}
+.teamCard:hover{
+  box-shadow: 3px 10px 1px #F1F1F1;
+}
+.teamCard .left{
+  width: 30%;
+}
+.teamCard .circle{
+  position: relative;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.teamCard:nth-child(4n+1){
+  margin-left: 0;
+}
+.teamCard .right{
+  margin-top: 15px;
+}
+.teamCard .right .teamName{
+  font-size: 16px;
+}
+.teamCard .right .attribute{
+  height: 20px;
+  margin: 10px 5px;
+  font-size: 14px;
+}
+.teamCard .attribute .private{
+  display: inline-block;
+  padding: 3px 5px;
+  border: 2px solid #F1F1F1;
+  margin-right: 5px;
+}
+.teamCard .attribute .lock{
+  display: inline-block;
+  padding: 3px 5px;
+  border: 2px solid #F1F1F1;
+}
+.teams .teamAdd{
+  width: 23%;
+  background-color: #fff;
+  padding-bottom: 10px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #F1F1F1;
+  box-shadow: 3px 3px 1px #F1F1F1;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column;
+}
+.teamAdd .circleAdd{
+  height: 50%;
+}
+.teamAdd .circleAdd .circle{
+  position: relative;
+  top: 30%;
+  left: 50%;
+  background-color: #C9CDD0;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.teamAdd .addTitle{
+  margin-top: 10px;
+  text-align: center;
+}
+.teamAdd:hover{
+  box-shadow: 3px 10px 1px #F1F1F1;
+  cursor: pointer;
+}
+.option{
+  z-index: 2;
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 15px;
+}
+.option ul{
+  background-color: #fff;
+  list-style: none;
+  padding: 10px;
+  border: 1px solid #F1F1F1;
+  box-shadow: 3px 3px 1px #F1F1F1;
+  border-radius: 6px;
+}
+.option ul li {
+  width: 100px;
+  padding: 10px 10px;
+}
+.option ul li:hover {
+  background-color: #F6F7F8;
+  color: #76B3E8;
+}
+
+
